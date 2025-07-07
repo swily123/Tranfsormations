@@ -8,7 +8,6 @@ public class Capsule : MonoBehaviour
 
     private void Update()
     {
-        float scaleDirection = _speed * Time.deltaTime;
-        transform.localScale += new Vector3(scaleDirection, scaleDirection, scaleDirection);
+        transform.localScale += Vector3.one * _speed * Time.deltaTime;
     }
 }
